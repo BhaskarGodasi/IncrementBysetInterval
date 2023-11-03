@@ -1,8 +1,10 @@
 const h1 = document.querySelector("#value")
+const st = document.querySelector("#st")
+
 let count=0
 var increment
 function render(){
-    
+    st.disabled = true;
    increment = setInterval(demo,1000)
 
     function demo(){
@@ -14,7 +16,7 @@ function render(){
 }
 function stop(){
     clearInterval(increment)
-
+st.disabled = false;
 }
 
 
